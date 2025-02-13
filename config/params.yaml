@@ -1,0 +1,13 @@
+TrainingArguments:
+  evaluation_strategy : "steps"
+  eval_steps : 500
+  save_steps : 500
+  learning_rate : 0.00003
+  per_device_train_batch_size : 1
+  per_device_eval_batch_size : 1
+  num_train_epochs : 1
+  weight_decay : 0.01 
+  warmup_steps : 500
+  logging_dir : "logs"
+  logging_steps : 10
+  gradient_accumulation_steps : 16

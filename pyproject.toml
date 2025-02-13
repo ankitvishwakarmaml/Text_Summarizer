@@ -1,0 +1,28 @@
+[project]
+name = "text-summarizer"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "AnkitvishwakarmaML", email = "ankitvishwakarma01122001@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.3.0",
+    "datasets>=3.2.0",
+    "ensure>=1.0.4",
+    "nltk>=3.9.1",
+    "pandas>=2.2.3",
+    "py7zr>=0.22.0",
+    "python-box>=7.3.2",
+    "pyyaml>=6.0.2",
+    "torch>=2.6.0",
+    "transformers>=4.48.3",
+]
+
+[project.scripts]
+text-summarizer = "text_summarizer:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
